@@ -1,9 +1,9 @@
 /* Jon Whipple 2022-07-10 */
-:root {
-  --base-unit: calc(2vw + 0rem);
-  
+:root {  
   font-family: Helvetica, Arial, sans-serif;
-  font-size: var(--base-unit);
+  
+  font-size: 36px;
+  line-height: 1.5;
 }
 
 html {
@@ -11,10 +11,9 @@ html {
 }
 
 body {
-  width: 45rem;
-  height: 100%;
-  
-  margin: 0 auto;
+  margin: auto;
+  width: 80%;
+  font-size: 1rem;
 }
 
 /* header {} */
@@ -25,7 +24,7 @@ main {
 }
 
 footer {
-  padding-bottom: var(--base-unit);
+  padding-bottom: 1rem;
 }
 
 article {
@@ -33,7 +32,13 @@ article {
 }
 
 h1 {
-  font-size: calc();
+  font-size: 1.8rem;
+  line-height: 1;
+  hyphens: manual;
+}
+
+h2 {
+  line-height: 1;
 }
 
 a:link {
@@ -68,5 +73,6 @@ a:active {
 
 .certification-mark {
   margin-top: 0.5rem;
-  width: calc(10 * var(--base-unit));
+  min-width: 144px;
+  max-width: 288px;
 }
